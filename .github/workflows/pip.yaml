@@ -1,0 +1,33 @@
+name: Python Package Publish
+
+on:
+  push:
+    branches:
+      - master  # This will run the workflow when you push a new version tag like v1.0.0
+
+jobs:
+  pypi-publish:
+    name: Publish to PyPI
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'  # Use the Python version you're targeting
+
+    - name: Install dependencies
+      run: |
+        pip install build twine
+
+    - name: Build package
+      run: |
+        python -m build
+
+    - name: Publish to PyPI
+      uses: pypa/gh-action-pypi-publish@v1.10.3
+      with:
+        password: ${{ secrets.PYPI_PASSWORD }}
+        username: ${{ secrets.PYPI_USERNAME }}  # If omitted, defaults to '__token__'
