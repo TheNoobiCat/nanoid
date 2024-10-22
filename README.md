@@ -1,7 +1,5 @@
 # Nano ID
 
-[![CircleCI](https://circleci.com/gh/puyuan/py-nanoid/tree/master.svg?style=svg)](https://circleci.com/gh/puyuan/py-nanoid/tree/master)
-
 A tiny, secure, URL-friendly, unique string ID generator for Python.
 
 * __Safe__. It uses cryptographically strong random APIs and tests distribution of symbols.
