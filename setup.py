@@ -20,5 +20,5 @@ setup(
         'Operating System :: OS Independent',
         'Topic :: Utilities'
     ],
-    zip_safe=False
+    # removed zipsafe
 )
