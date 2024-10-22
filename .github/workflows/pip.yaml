@@ -30,4 +30,4 @@ jobs:
       uses: pypa/gh-action-pypi-publish@v1.10.3
       with:
         password: ${{ secrets.PYPI_PASSWORD }}
-        username: ${{ secrets.PYPI_USERNAME }}  # If omitted, defaults to '__token__'
+        user: ${{ secrets.PYPI_USERNAME }}  # If omitted, defaults to '__token__'
