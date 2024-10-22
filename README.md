@@ -9,7 +9,7 @@ A tiny, secure, URL-friendly, unique string ID generator for Python.
 ## Installation
 
 ```sh
-pip install nanoid
+pip install python-nanoid
 ```
 
 
