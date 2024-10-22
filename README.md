@@ -1,6 +1,6 @@
 # Nano ID
 
-A tiny, secure, URL-friendly, unique string ID generator for Python.
+A tiny, secure, URL-friendly, unique string ID generator for Python. Forked from puyuan/py-nanoid.
 
 * __Safe__. It uses cryptographically strong random APIs and tests distribution of symbols.
 * __Compact__. It uses a larger alphabet than UUID (A-Za-z0-9_-). So ID size was reduced from 36 to 21 symbols.
@@ -83,13 +83,18 @@ nanoid-dictionary with popular alphabets to use with nanoid/generate.
 
 
 ## Changelog
+- v2.0.1
+    - Fork from puyuan/py-nanoid and switch to GitHub Actions
+    - Remove deprecated zip_safe
+
+Prior to the fork:
+
 - v2.0.0
     - Replace ~ to - in default alphabet.
     - Add non-secure fast generator.
     - Reduce default characters from 22 to 21.
 - v0.3.0
     - Fix array out of bound error.
-
 
 ## Credits
 
