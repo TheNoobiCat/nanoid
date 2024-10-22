@@ -30,6 +30,7 @@ jobs:
       - name: test
         run: py.test test
         continue-on-error: true
+      - run: uv venv
       - run: uv pip install --upgrade flake8 pyflakes
       - name: lint
         run: flake8 --max-line-length=99  nanoid test setup.py
